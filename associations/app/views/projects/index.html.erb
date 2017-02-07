@@ -1,0 +1,15 @@
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+
+<h2>User is <%=@my_user.name %></h2>
+<br>
+<% @my_project.each do |y|%>
+<h1> <%= y.email %> </h1>
+<h1> <%= y.description %> </h1>
+<%= link_to("Delete", user_description_path(@my_user, y), method: :delete, data: {confirm: "Are your sure??"})%>
+<%= link_to "Edit", user_description_path(@my_user, y)%>
+<% end %>
+<br>
+<br>
+<a href="/projects/<%="#{@my_user.id}"%>/new">new user</a>
