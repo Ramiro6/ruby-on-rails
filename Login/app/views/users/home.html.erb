@@ -1,0 +1,10 @@
+<h1>Hello!! <span style="color: red"> <%= @name%>!! </span></h1>
+<% if flash[:notice] %>
+<span style="color: red"> <%= flash[:notice] %> </span>
+<% end %> <br>
+
+
+<%= link_to "Create User", "/new"%><br>
+<%= link_to "Login", "/login"%><br>
+<%= link_to "Logout", "/logout", "method" => :delete %><br>
+<%= link_to "All user", "/index"%>
