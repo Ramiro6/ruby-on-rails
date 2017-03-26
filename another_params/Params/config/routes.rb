@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
 
-  get '/user/:name', to: 'users#index'
+  get '/', to: 'users#index'
+  post '/', to: 'users#index'
 end
