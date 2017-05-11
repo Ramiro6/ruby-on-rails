@@ -1,0 +1,9 @@
+<% @zombie.each do |x| %>
+<%= x.name %>
+<% if x.bio == nil %> //
+<%= "no have" %>
+<% else %>
+<%= x.bio %>
+<% end %> //
+<%= x.age %>
+<% end %>
