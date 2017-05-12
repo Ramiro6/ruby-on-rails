@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ZombieControllerTest < ActionDispatch::IntegrationTest
+class ZombiesControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

@@ -1,0 +1,12 @@
+<% @zombie_all.each do |x| %>
+<form class="" action="index.html" method="post">
+  <li><%= x.name %></li>
+</form>
+<% end %>
+
+<br>
+Name of zombie
+<%= form_for @zombie do |x| %>
+<%= x.text_field :name %>
+<%= submit_tag "save" %>
+<% end %>
