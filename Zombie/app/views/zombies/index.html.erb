@@ -1,8 +1,10 @@
 <% @zombie_all.each do |x| %>
 <form class="" action="index.html" method="post">
-  <li><%= x.name %></li>
+  <li><%= x.name %> // <%= link_to "delete", people_path(person_id: x.id), method: :delete, class:"pp" %></li>
 </form>
 <% end %>
+
+
 
 <br>
 Name of zombie
@@ -10,3 +12,10 @@ Name of zombie
 <%= x.text_field :name %>
 <%= submit_tag "save" %>
 <% end %>
+
+
+
+
+<div class="hi">
+
+</div>
