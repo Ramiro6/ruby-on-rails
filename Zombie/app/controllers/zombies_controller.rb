@@ -15,6 +15,11 @@ class ZombiesController < ApplicationController
   def create
     @zombie = Person.new(new_zombie)
     @zombie.save
+
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def destroy

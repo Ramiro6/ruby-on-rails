@@ -8,13 +8,12 @@
 
 <br>
 Name of zombie
-<%= form_for @zombie do |x| %>
-<%= x.text_field :name %>
+<%= form_for @zombie, remote: true do |x| %>
+<%= x.text_field :name, class: "jj" %>
 <%= submit_tag "save" %>
 <% end %>
 
-
-
+<%= @zombie%>
 
 <div class="hi">
 
