@@ -4,8 +4,6 @@ $(document).ready(function(){
 
 
 
-
-
   $("<%= pp(@zombie_all) %>").remove();
 
   $(".hi").html("<%= @jj%>");

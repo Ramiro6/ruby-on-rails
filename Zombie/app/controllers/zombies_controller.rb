@@ -13,12 +13,13 @@ class ZombiesController < ApplicationController
   end
 
   def create
-    @zombie = Person.new(new_zombie)
+    if @zombie = Person.new(new_zombie)
+      respond_to do |format|
+        format.js
+        format.html
+      end
     @zombie.save
 
-    respond_to do |format|
-      format.html
-      format.js
     end
   end
 

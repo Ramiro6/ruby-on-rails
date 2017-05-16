@@ -1,5 +1,5 @@
 <% @zombie_all.each do |x| %>
-<form class="" action="index.html" method="post">
+<form class="tt" action="index.html" method="post">
   <li><%= x.name %> // <%= link_to "delete", people_path(person_id: x.id), method: :delete, class:"pp", remote: true %></li>
 </form>
 <% end %>
@@ -13,7 +13,7 @@ Name of zombie
 <%= submit_tag "save" %>
 <% end %>
 
-<%= @zombie%>
+<%= @zombie %>
 
 <div class="hi">
 
