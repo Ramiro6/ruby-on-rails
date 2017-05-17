@@ -1,5 +1,8 @@
 $(document).ready(function(){
-  $(".pp").append('<%= j render(@zombie)%>')
+  function notify() {
+    $(".qq").html($("#user_name").val())
+  }
 
+ $(".kk").on("click", notify)
 
 });
