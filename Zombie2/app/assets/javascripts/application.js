@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+// $(document).ready(function(){
+//   function notify() {
+//     $(".qq").html($("#user_name").val())
+//   }
+//
+//  $(".kk").on("click", notify)
+// });
