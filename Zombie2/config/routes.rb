@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   get '/', to: 'zombie#index'
   post '/', to: 'zombie#new', as: 'users'
+  delete '/', to: 'zombie#destroy'
 end

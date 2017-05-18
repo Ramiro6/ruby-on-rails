@@ -14,6 +14,11 @@ class ZombieController < ApplicationController
     @zombie.save
   end
 
+  def destroy
+    @zombie = User.find(params[:user_id])
+    @zombie.destroy
+  end
+
   private
   def new_user
     params.require(:user).permit(:name)
