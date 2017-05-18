@@ -16,7 +16,13 @@ class ZombieController < ApplicationController
 
   def destroy
     @zombie = User.find(params[:user_id])
-    @zombie.destroy
+    if @zombie
+        respond_to do  |format|
+          format.html
+          format.js
+        end
+      @zombie.destroy.to_s
+    end
   end
 
   private
