@@ -27,3 +27,11 @@
 App = Ember.Application.create();
 //= require_tree .
 // window.App = Ember.Application.create()
+
+
+function name() {
+  console.log("hola");
+}
+
+
+name()

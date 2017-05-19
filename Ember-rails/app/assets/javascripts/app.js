@@ -9,3 +9,11 @@
 //= require_tree ./routes
 //= require ./router
 //= require_self
+
+
+function name() {
+  console.log("hola");
+}
+
+
+name()
