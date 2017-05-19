@@ -11,7 +11,7 @@ Hola
   <% @zombie.each do |x| %>
   <div class="qq">
     <div id="gg"> <%= x.name %> // <%= link_to "delete", users_path(user_id: x.id), :method => :delete, remote: true %>
-  </div>
+    </div>
   <% end %>
 </div>
 
